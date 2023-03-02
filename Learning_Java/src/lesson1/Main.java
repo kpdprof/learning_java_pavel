@@ -1,4 +1,4 @@
-package lesson_1;
+package lesson1;
 
 import java.util.Scanner;
 
@@ -17,14 +17,9 @@ public class Main {
 
         System.out.println(Integer.MAX_VALUE);
         // Числа по умолчанию равны 0, для логических – false, для ссылок на объект – null
+
         System.out.println(drawIsMonitorsCounter(9, 10));
         System.out.println(priceCalculation(8.50, 2));
-
-        String string = new String("Hello");
-        System.out.println(string);
-
-        Scanner scanner = new Scanner(System.in);
-
     }
 
     // Сигнатура метода — это имя метода плюс параметры (причем порядок параметров имеет значение).
@@ -36,9 +31,4 @@ public class Main {
     public static double priceCalculation(double price, int count) {
         return price * count;
     }
-
 }
-
-// Как создать пакет через консоль
-// Загуглив пакеты util java, не вижу Scanner, где он лежит
-// где в IDE лежит util и как его найти
