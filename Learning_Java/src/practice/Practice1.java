@@ -19,7 +19,7 @@ class Dog {
     int age;
     String say;
 
-    Dog(String name, int age, String say) {
+    public Dog(String name, int age, String say) {
         System.out.println(1);
 
         this.name = name;
@@ -51,7 +51,7 @@ class Cat {
     int age;
     String say;
 
-    Cat(String name, int age, String say) {
+    public Cat(String name, int age, String say) {
         System.out.println(3);
 
         this.name = name;

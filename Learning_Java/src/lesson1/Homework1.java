@@ -1,8 +1,6 @@
 package lesson1;
 
-import java.util.Scanner;
-
-public class Main {
+public class Homework1 {
     public static void main(String[] args) {
         var varByte = 1; // 8 bit / -128..127
         var varShort = 1; // 16 bit / -32768..32767
@@ -13,7 +11,7 @@ public class Main {
         var varDouble = 1.0; // 64 bit / число сначала приводиться к double
 
         var varChar = 'a'; // 16 bit / only positive
-        var varBoolean = false; // true or false / false по умолчанию
+        var varBoolean = false; // 8 bit/  true or false / false по умолчанию
 
         System.out.println(Integer.MAX_VALUE);
         // Числа по умолчанию равны 0, для логических – false, для ссылок на объект – null
