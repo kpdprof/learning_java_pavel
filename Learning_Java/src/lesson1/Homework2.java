@@ -61,6 +61,8 @@ public class Homework2 {
     public static class Human {
 
     }
+
+    
 }
 
 // первые конструкторы после полей
