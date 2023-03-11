@@ -78,5 +78,4 @@ class Cat {
     public void printInfo() {
         System.out.println(name + " " + age);
     }
-    
 }
