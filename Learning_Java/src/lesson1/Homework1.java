@@ -29,4 +29,6 @@ public class Homework1 {
     public static double priceCalculation(double price, int count) {
         return price * count;
     }
+
 }
+
