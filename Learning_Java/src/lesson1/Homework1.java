@@ -30,3 +30,4 @@ public class Homework1 {
         return price * count;
     }
 }
+
