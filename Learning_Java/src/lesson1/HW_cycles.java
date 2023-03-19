@@ -1,14 +1,18 @@
 package lesson1;
 
+import java.util.Arrays;
+
 import static lesson1.HW1.arr;
-import static lesson1.HW1.printOddNumbers;
+import static lesson1.HW4.getStringFromArray;
 
 public class HW_cycles {
     public static void main(String[] args) {
-        printOddNumbers(arr);
+        HW1.printOddNumbers(arr);
+        getStringFromArray(arr);
 
     }
 }
+
 class HW1 {
     public static int[] arr = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
@@ -28,27 +32,30 @@ class HW1 {
 class HW2 {
     int[] firstArray = {1, 3, 7, 5};
     int[] secondArray = {8, 4, 2, 4};
-    public static int merge(int[] firstArray, int[] secondArray) {
+    static int count = 0;
+
+    public static String merge(int[] firstArray, int[] secondArray) {
         int[] generalАrray = new int[firstArray.length + secondArray.length];
         for(int i = 0; i < firstArray.length; i++) {
             generalАrray[i] = firstArray[i];
-
+            count++;
         }
         for (int i = 0; i < secondArray.length; i++) {
-            generalАrray[i] = secondArray.length;
-
+            generalАrray[count++] = secondArray.length;
         }
         return generalАrray.toString();
     }
-    public static int sort() {
-
-    }
+    // метод chainy
+//    public static int sort() {
+//
+//    }
 
     public static int mergeAndSort(int[] firstArray, int[] secondArray) {
 //        merge
 
 //        sort
 
+        return 0;
     }
 //    Реализовать метод mergeAndSort(int[] firstArray, int[] secondArray), который принимает соединяет и сортирует два
 //    произвольных массива чисел
@@ -73,6 +80,16 @@ class HW3 {
 }
 
 class HW4 {
+    public static void getStringFromArray(int[] arr) {
+        System.out.print("[");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + ", ");
+        }
+        System.out.print("\b\b]");
+        
+        // методы классы Arrays посмотреть
+
+    }
 
 //    Реализуйте метод, который будет принимать массив чисел, и выводить его значения в консоль c помощью методов
 //    класса Arrays
@@ -80,3 +97,4 @@ class HW4 {
 //    Пример ввода: {1,2,3,4,5,5,6,7,7}
 //    Пример вывода: [1, 2, 3, 4, 5, 5, 6, 7, 7]
 }
+
